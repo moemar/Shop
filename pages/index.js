@@ -5,7 +5,7 @@ const Home = () => (
   <div>
     <Head>
       <meta name="description" content="Meta description" />
-      <title>Home</title>
+      <title>Home Page</title>
       <link
         rel="shortcut icon"
         type="image/x-icon"
