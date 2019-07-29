@@ -6,7 +6,7 @@ import { GA_TRACKING_ID } from "../lib/gtag";
 export default class extends Document {
   render() {
     return (
-      <html lang="no">
+      <html>
         <Head>
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
@@ -20,7 +20,10 @@ export default class extends Document {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', '${GA_TRACKING_ID}');
+            gtag('config', '${GA_TRACKING_ID}', {
+              'currency': 'USD',
+              'country': 'US'
+            });
           `
             }}
           />
